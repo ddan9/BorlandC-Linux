@@ -1,0 +1,33 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+//
+// owlhelp.rc
+
+#include <windows.h>
+#include "owlhelpr.h"
+
+OWLHELPAPMENU MENU
+BEGIN
+	POPUP "&Menu"
+	BEGIN
+        MENUITEM "Menu Item &A", CM_U_MENUITEMA
+        MENUITEM "Menu Item &B", CM_U_MENUITEMB
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", CM_EXIT
+	END
+
+	POPUP "\a&Help"
+	BEGIN
+		MENUITEM "&Index\aShift+F1", CM_U_HELPINDEX
+		MENUITEM "&Using help", CM_U_HELPHELP
+		MENUITEM SEPARATOR
+		MENUITEM "&About", CM_U_HELPABOUT
+	END
+
+END
+
+OWLHELPAPACCEL ACCELERATORS
+BEGIN
+        VK_F1, CM_U_HELPINDEX, VIRTKEY, SHIFT
+END
+
+

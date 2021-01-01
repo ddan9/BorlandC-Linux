@@ -1,0 +1,15 @@
+#define STRICT
+
+#include <windows.h>
+
+DRAGDROPMENU MENU
+BEGIN
+	POPUP "Help"
+	BEGIN
+		MENUITEM "How To",		101
+		MENUITEM "View Files",	102
+		MENUITEM "Clear Files",	103
+		MENUITEM SEPARATOR
+		MENUITEM "About" ,		104
+	END
+END

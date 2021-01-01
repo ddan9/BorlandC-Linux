@@ -1,0 +1,51 @@
+/* Borland C++ - (C) Copyright 1992 by Borland International               */
+
+#define STRICT
+
+#include <windows.h>
+#include "ddeclnt.h"
+
+DDEClientIcon   ICON    ddeclnt.ico
+
+DDEClientMenu MENU
+BEGIN
+        POPUP "&File"
+        BEGIN
+                MENUITEM "E&xit",               IDM_EXIT
+        END
+
+        POPUP "&Connect"
+        BEGIN
+                MENUITEM "To &Server",          IDM_CONNECT_SERVER
+        END
+
+        POPUP "&Disconnect"
+        BEGIN
+                MENUITEM "From &Server",        IDM_DISCONNECT_SERVER
+        END
+
+        POPUP "&Messages"
+        BEGIN
+                MENUITEM "&To Server",          IDM_MSG_TO_SERVER
+                MENUITEM "&From Server",        IDM_MSG_FROM_SERVER
+        END
+
+        POPUP "\a&Help"
+        BEGIN
+                MENUITEM "&About",              IDM_ABOUT
+        END
+
+END
+
+AboutBox DIALOG 22, 17, 144, 110
+STYLE DS_MODALFRAME | WS_CAPTION | WS_SYSMENU
+CAPTION "About DDEClient"
+BEGIN
+    ICON  "DDEClientIcon",          -1,       8, 85,   0,  0
+    CTEXT "Microsoft Windows"       -1,       0,  8, 144,  8
+    CTEXT "DDE Client Application"  -1,       0, 20, 144,  8
+    CTEXT "Version 1.0"             -1,       0, 40, 144,  8
+    CTEXT "A Borland Example"       -1,       0, 60, 144,  8
+    DEFPUSHBUTTON "OK"            IDOK,      53, 85,  32, 14,      WS_GROUP
+END
+

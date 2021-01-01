@@ -1,0 +1,17 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+//
+// owlscrn.rc
+
+#include <windows.h>
+#include <bwcc.h>
+#include "owlscrn.h"
+
+CONFIGUREDIALOG DIALOG 16, 27, 162, 72
+CAPTION "Screen Saver Settings"
+CLASS "bordlg"
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+BEGIN
+	CTEXT "This screen saver has no options", -1, 25, 18, 111, 12, WS_CHILD | WS_VISIBLE | WS_GROUP
+	CONTROL "", 101, "BorShade", 1 | WS_CHILD | WS_VISIBLE, 16, 8, 129, 30
+        CONTROL "Button", IDOK, "BorBtn", 1 | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 65, 46, 32, 20
+END

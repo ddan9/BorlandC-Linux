@@ -1,0 +1,35 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+USESTATIC=1
+
+!include "..\..\examples\makefile.inc"
+
+olesrvr.exe: turboc.cfg olesrvr.obj document.obj object.obj server.obj olesrvr.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) olesrvr document object server,olesrvr,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K olesrvr.res olesrvr.exe
+
+olesrvr.res: olesrvr.rc olesrvr.h
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

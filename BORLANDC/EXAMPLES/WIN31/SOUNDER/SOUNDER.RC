@@ -1,0 +1,15 @@
+// Borland C++ - (C) Copyright 1992 by Borland International
+
+#define STRICT
+
+#include <windows.h>
+
+#include "sounder.h"
+
+
+STRINGTABLE
+BEGIN
+	IDS_NAME, "sounder"
+END
+
+

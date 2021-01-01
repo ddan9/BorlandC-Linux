@@ -1,0 +1,42 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+all: ddecli.exe ddesvr.exe
+
+ddecli.exe: turboc.cfg ddecli.obj ddecli.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) ddecli,ddecli,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K ddecli.res ddecli.exe
+
+ddecli.res: ddecli.rc ddeclir.h
+
+ddesvr.exe: turboc.cfg ddesvr.obj
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) ddesvr,ddesvr,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K ddesvr.exe
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+
+

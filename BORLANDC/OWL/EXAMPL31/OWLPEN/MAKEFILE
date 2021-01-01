@@ -1,0 +1,33 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+owlpen.exe: turboc.cfg owlpen.obj owlpen.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL)  owlpen,owlpen,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K owlpen.res owlpen.exe
+
+owlpen.res: owlpen.rc owlpen.h
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

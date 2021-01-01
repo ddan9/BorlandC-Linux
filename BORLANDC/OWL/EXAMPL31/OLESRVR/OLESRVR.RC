@@ -1,0 +1,45 @@
+#include "windows.h"
+#include "olesrvr.h"
+#include "owlrc.h"
+
+MenuBar MENU
+BEGIN
+  POPUP "&File" {
+    MENUITEM "&New...",		 IDM_NEW
+    MENUITEM "&Open...",         IDM_OPEN
+    MENUITEM "&Save",            IDM_SAVE
+    MENUITEM "Save &As...",      IDM_SAVEAS
+    MENUITEM SEPARATOR
+    MENUITEM "E&xit",            CM_EXIT
+  }
+
+  POPUP "&Edit"
+  BEGIN
+    MENUITEM "&Copy",  	 	IDM_COPY
+  END
+
+  POPUP "&Shape"
+  BEGIN
+    MENUITEM "&Ellipse", 	 IDM_ELLIPSE, CHECKED
+    MENUITEM "&Rectangle", 	 IDM_RECTANGLE,
+    MENUITEM "&Triangle", 	 IDM_TRIANGLE,
+  END
+
+  POPUP "&Help"
+  BEGIN
+    MENUITEM "&About...",        IDM_ABOUT
+  END
+END
+
+AboutBox DIALOG 7, 22, 115, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About OwlSrvr"
+BEGIN
+	LTEXT "Copyright (C) 1992", -1, 27, 39, 60, 8
+	LTEXT "Object Windows ", -1, 30, 12, 54, 8
+	LTEXT "Borland International, Inc.", -1, 15, 49, 84, 8
+	CONTROL "OK", IDOK, "BUTTON", BS_DEFPUSHBUTTON | WS_CHILD | WS_VISIBLE | WS_GROUP | WS_TABSTOP, 41, 67, 32, 14
+	LTEXT "OLE Server", -1, 38, 29, 38, 8, WS_CHILD | WS_VISIBLE | WS_GROUP
+END
+
+

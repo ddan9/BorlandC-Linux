@@ -1,0 +1,16 @@
+NAME            CliOLE
+
+DESCRIPTION     'Borland OLE Client Demo Program'
+
+EXETYPE         WINDOWS
+
+STUB            'WINSTUB.EXE'
+
+CODE            PRELOAD MOVEABLE DISCARDABLE
+DATA            PRELOAD MOVEABLE MULTIPLE
+
+HEAPSIZE        4096
+STACKSIZE       8192
+
+EXPORTS         WndProc         @1
+                StdCallBack     @2

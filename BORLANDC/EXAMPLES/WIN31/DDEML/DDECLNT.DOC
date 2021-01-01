@@ -1,0 +1,5 @@
+        To run the dde client/server example, lauch both ddeclnt.exe and
+ddesrvr.exe.  At this point, all user interation takes place in the client
+window.  Establish a connection (you can verify the connection in the server
+window).  Send data to and request data from the server.  Disconnect from 
+the server when you're finished.

@@ -1,0 +1,33 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+oleclnt.exe: turboc.cfg oleclnt.obj oleclnte.obj oleclnt.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) oleclnt oleclnte,oleclnt,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K oleclnt.res oleclnt.exe
+
+oleclnt.res: oleclnt.rc oleclntr.h
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

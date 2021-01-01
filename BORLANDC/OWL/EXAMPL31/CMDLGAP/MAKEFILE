@@ -1,0 +1,35 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+cmdlgap.exe: turboc.cfg cmdlgap.obj cmdlgap.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) cmdlgap,@&&!
+cmdlgap
+
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K cmdlgap.res cmdlgap.exe
+
+cmdlgap.res : cmdlgap.rc cmdlgapr.h
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

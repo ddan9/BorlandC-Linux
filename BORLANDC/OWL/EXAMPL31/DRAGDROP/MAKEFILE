@@ -1,0 +1,31 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+dragdrop.exe: turboc.cfg dragdrop.obj dragdrop.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL)  dragdrop,dragdrop,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K dragdrop.res dragdrop.exe
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

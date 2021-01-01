@@ -1,0 +1,35 @@
+#include "windows.h"
+#include "owlrc.h"
+
+rcinclude filedial.dlg
+
+#include "soundply.h"
+
+ID_MENU MENU
+BEGIN
+	POPUP "File"
+	BEGIN
+		MENUITEM "&Open Wave\tCtrl+O...", SM_OPEN
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", SM_EXIT
+	END
+ 
+	POPUP "Control"
+	BEGIN
+        	MENUITEM "&Play\tCtrl+P", SM_PLAY, GRAYED
+                MENUITEM "P&ause\tCtrl+A", SM_PAUSE, GRAYED
+	END
+
+        POPUP "Help"
+        BEGIN
+        	MENUITEM "&About", SM_ABOUT
+        END
+END
+
+ACCELERATORS_1 ACCELERATORS
+BEGIN
+	"^O", 201
+	"^P", 301
+        "^A", 302
+        "^R", 302
+END

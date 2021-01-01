@@ -1,0 +1,15 @@
+NAME            CMDLG
+
+DESCRIPTION     'Borland Common Dialog Demo Program'
+
+EXETYPE         WINDOWS
+
+STUB            'WINSTUB.EXE'
+
+CODE            PRELOAD MOVEABLE DISCARDABLE
+DATA            PRELOAD MOVEABLE MULTIPLE
+
+HEAPSIZE        2048
+STACKSIZE       8192
+
+EXPORTS         MainWndProc     @1

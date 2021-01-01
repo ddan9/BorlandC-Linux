@@ -1,0 +1,43 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+
+#include <windows.h>
+
+CUCKOO1 BITMAP "cuckoo1.bmp"
+CUCKOO2 BITMAP "cuckoo2.bmp"
+CUCKOO3 BITMAP "cuckoo3.bmp"
+CUCKOO4 BITMAP "cuckoo4.bmp"
+CUCKOO5 BITMAP "cuckoo5.bmp"
+CUCKOO6 BITMAP "cuckoo6.bmp"
+CUCKOO7 BITMAP "cuckoo7.bmp"
+CUCKOO8 BITMAP "cuckoo8.bmp"
+FACE_BMP BITMAP "face_bmp.bmp"
+
+TOOL_MENU MENU
+BEGIN
+	POPUP "&Effects"
+	BEGIN
+		MENUITEM "&Chime", 101
+		MENUITEM "C&uckoo", 102
+	END
+
+	POPUP "&Help", HELP
+	BEGIN
+		MENUITEM "&About", 104
+	END
+
+END
+
+
+ABOUT DIALOG 15, 22, 167, 99
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CLASS "bordlg"
+CAPTION "About Cuckoo Clock"
+BEGIN
+	CONTROL "Button", 1, "BorBtn", 0 | WS_CHILD | WS_VISIBLE | WS_TABSTOP, 68, 75, 31, 20
+	CONTROL "", 101, "BorShade", 1 | WS_CHILD | WS_VISIBLE, 39, 7, 89, 39
+	CONTROL "Created with Borland C++ and ObjectWindows", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 9, 58, 151, 9
+	CONTROL "", 102, "BorShade", 1 | WS_CHILD | WS_VISIBLE, 6, 57, 155, 12
+	CONTROL "Chimes Every Hour.", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 49, 11, 68, 9
+	CONTROL "Look out at Midnight!", -1, "STATIC", SS_LEFT | WS_CHILD | WS_VISIBLE | WS_GROUP, 48, 23, 71, 9
+END
+

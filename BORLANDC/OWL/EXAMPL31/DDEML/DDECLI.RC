@@ -1,0 +1,32 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+//
+// ddecli.rc
+
+#include <windows.h>
+#include "ddeclir.h"
+
+#include <inputdia.dlg>
+
+TDMLClWnd_MENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "E&xit", CM_EXIT
+	END
+
+        MENUITEM "&Connect!", CM_U_CONNECT
+        MENUITEM "&Request!", CM_U_REQUEST, GRAYED
+        MENUITEM "&Poke!", CM_U_POKE, GRAYED
+        POPUP "&Advise"
+	BEGIN
+                MENUITEM "Advise Loop", CM_U_ADVISE, GRAYED
+	END
+
+        POPUP "\a&Help"
+	BEGIN
+		MENUITEM "&About", CM_U_HELPABOUT
+	END
+
+END
+
+

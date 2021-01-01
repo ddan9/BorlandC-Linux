@@ -1,0 +1,36 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+aclock.exe: turboc.cfg aclock.obj aclock.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL)  aclock,aclock,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K aclock.res aclock.exe
+
+aclock.obj: aclock.cpp aclock.h bitmap.h
+
+aclock.res: aclock.rc cuckoo1.bmp cuckoo2.bmp cuckoo3.bmp cuckoo4.bmp \
+            cuckoo5.bmp cuckoo6.bmp cuckoo7.bmp cuckoo8.bmp face_bmp.bmp
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

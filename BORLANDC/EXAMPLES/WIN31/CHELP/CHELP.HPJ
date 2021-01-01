@@ -1,0 +1,14 @@
+
+[OPTIONS]
+TITLE=C HELP Help
+CONTENTS=CONTENTS
+
+[FILES]
+chelp.rtf
+
+[CONFIG]
+BrowseButtons()
+
+[MAP]
+#include <chelpm.h>
+

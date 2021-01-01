@@ -1,0 +1,26 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+//
+// cmdlgap.rc
+
+#include <windows.h>
+#include "cmdlgapr.h"
+
+CMDLGAPMENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&Open", CM_U_FILEOPEN
+		MENUITEM SEPARATOR
+		MENUITEM "E&xit", CM_EXIT
+	END
+
+	MENUITEM "&Color", CM_U_COLOR
+	MENUITEM "F&ont", CM_U_FONT
+	POPUP "\a&Help"
+	BEGIN
+		MENUITEM "&About", CM_U_HELPABOUT
+	END
+
+END
+
+

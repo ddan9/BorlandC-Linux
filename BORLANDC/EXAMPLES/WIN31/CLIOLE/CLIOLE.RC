@@ -1,0 +1,33 @@
+#define STRICT
+
+#include "windows.h"
+#include "bwcc.h"
+#include "cliolerc.h"
+
+CLIOLEMENU MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "E&xit", CM_EXIT
+	END
+
+	POPUP "&Edit"
+	BEGIN
+		MENUITEM "&Undo", CM_UNDO
+		MENUITEM "Cu&t", CM_CUT
+		MENUITEM "&Copy", CM_COPY
+		MENUITEM "&Paste", CM_PASTE
+		MENUITEM "C&lear", CM_CLEAR
+	END
+
+	POPUP "&Object"
+	BEGIN
+		MENUITEM "&New Paint Brush", CM_PBRUSH
+		MENUITEM "&Activate",        CM_ACTIVATE
+	END
+	POPUP "\a&Help"
+	BEGIN
+		MENUITEM "&About" , CM_ABOUT
+	END
+END
+

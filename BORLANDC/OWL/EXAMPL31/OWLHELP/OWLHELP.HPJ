@@ -1,0 +1,14 @@
+
+[OPTIONS]
+TITLE=OWLHELP Help
+CONTENTS=CONTENTS
+
+[FILES]
+owlhelp.rtf
+
+[CONFIG]
+BrowseButtons()
+
+[MAP]
+#include <owlhelpm.h>
+

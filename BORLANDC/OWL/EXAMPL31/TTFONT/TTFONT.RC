@@ -1,0 +1,46 @@
+// ObjectWindows - (C) Copyright 1992 by Borland International
+//
+// ttfont.rc
+
+#include <windows.h>
+#include "ttfont.h"
+
+100 MENU
+BEGIN
+	POPUP "&File"
+	BEGIN
+		MENUITEM "&About", CM_ABOUT
+		MENUITEM "E&xit", 24340
+	END
+
+	POPUP "&Options"
+	BEGIN
+		MENUITEM "&Shadows", CM_SHADOWS
+		MENUITEM "&Alignment Marks", CM_ALIGNMENTMARKS
+		MENUITEM "&Fonts...", CM_FONTS
+	END
+
+END
+
+
+ABOUT DIALOG 17, 23, 142, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+BEGIN
+	PUSHBUTTON "&OK", 1, 52, 97, 38, 15
+	CONTROL "Borland C++ ObjectWindows", 103, "STATIC", SS_CENTER | WS_CHILD | WS_VISIBLE, 13, 51, 115, 10
+	CONTROL "Copyright © 1992", 104, "STATIC", SS_CENTER | WS_CHILD | WS_VISIBLE, 42, 72, 59, 10
+	CONTROL "Borland International", 108, "STATIC", SS_CENTER | WS_CHILD | WS_VISIBLE, 36, 82, 70, 9
+	CTEXT "TrueType Font Lab", -1, 25, 7, 92, 8
+	CTEXT "Windows 3.1 Demo Program", -1, 19, 62, 104, 8
+	CONTROL 1, -1, "STATIC", SS_ICON | WS_CHILD | WS_VISIBLE | WS_GROUP, 63, 25, 16, 16
+END
+
+
+
+
+
+
+
+#include "font.dlg"
+1 ICON "ttfont.ico"

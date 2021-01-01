@@ -1,0 +1,40 @@
+#
+# ObjectWindows - (C) Copyright 1992 by Borland International
+#
+
+!if !$d(BCROOT)
+!include "..\bcroot.inc"
+!endif
+
+!include "..\..\examples\makefile.inc"
+
+HC = hc31
+
+all: owlhelp.exe owlhelp.hlp
+
+owlhelp.exe: turboc.cfg owlhelp.obj owlhelp.res
+     $(TLINK) $(LFLAGS) $(BCLIBDIR)\c0w$(MODEL) owlhelp,owlhelp,,@&&!
+$(OWLLIBS) $(STDLIBS)
+!,$(OWLROOT)\lib\owl.def
+     $(RC) -31 -K owlhelp.res owlhelp.exe
+
+owlhelp.res: owlhelp.rc owlhelpr.h
+
+owlhelp.hlp: owlhelp.hpj owlhelp.rtf
+     $(HC) owlhelp.hpj
+
+turboc.cfg: makefile ..\..\examples\makefile.inc
+	echo -I$(INCLUDE) >turboc.cfg
+
+clean:
+	del *.obj
+	del *.exe
+	del *.res
+	del *.dll
+	del *.lib
+	del *.map
+	del *.sym
+        del *.dsk
+        del turboc.cfg
+
+

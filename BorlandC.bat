@@ -1,0 +1,2 @@
+cd ./BORLANDC/BIN
+BC.EXE
