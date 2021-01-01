@@ -60,7 +60,7 @@ if [[ $lang = "" ]]
 				echo " Using language: English "
 				echo ""
 
-				sleep $sleeptimee
+				sleep $sleeptime
 
 				echo " Preparing to install Borland C++ on Linux..."
 				echo ""
