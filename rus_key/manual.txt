@@ -1,0 +1,37 @@
+Первым делом необходимо распоковать 2 файлика из папок в папку с Borladn C++
+KeyRus.com - нужно по пути (Ваш диск):\\Borland\BORLANDC\BIN
+russian.txt - путь (Ваш диск):\\Borl
+and\DosBox
+
+.....................
+
+Затем не выходя из папки открываем через Notepad++ или другой редактор текста 
+файл dosbox.conf и меняем в нем следущие значения:
+
+В блоке [dosbox]
+Должны стоять такие значения:
+
+language=russian.txt
+machine=svga_s3
+captures=capture
+memsize=16
+
+В блоке [dos]
+Должны стоять так ие значения:
+
+xms=true
+ems=true
+umb=true
+keyboardlayout=RU
+
+В блоке [autoexec]
+Нужно прописать после строки с mount c c:\Borland
+SET PATH=%PATH%;C:\Borland\Borlandc\BIN
+keyrus
+
+........................
+
+Последний пункт, это запуск непосредственно самого Borland C++.
+После запуска открываем меню File и выбираем пункт Dos Shell.
+В появившейся строке сразу же  прописываем: keyb  ru441 866.
+Нажимаем Enter. Затем прописываем Exit и наслаждаемся русской расскладкой
