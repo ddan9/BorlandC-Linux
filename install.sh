@@ -66,6 +66,8 @@ if [[ $lang = "" ]]
 				echo ""
 				echo " All program files are in the cloned directory (including your future programs)"
 				echo ""
+				echo " More detailed information you can find on https://github.com/ddan9/BorlandC-Linux"
+				echo "" 
 				echo " If given a choice during installation, select and enter: Y"
 				echo ""
 
@@ -124,6 +126,8 @@ if [[ $lang = "" ]]
 				echo " Прошу вас заметить, что сама устанавливаемая программа по некоторым причинам не будет переведена на русский язык"
 				echo ""
 				echo " Все файлы программы лежат в клонированной директории (в том числе и ваших будущих программ)"
+				echo ""
+				echo " Более подробную информацию вы можете найти на https://github.com/ddan9/BorlandC-Linux"
 				echo ""
 				echo " Если во время установки вам будут давать выбор, выбирайте и вводите: Y"
 				echo ""
