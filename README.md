@@ -49,6 +49,16 @@ There is IDE of Borland C++ for Linux
 
 <br />
 
+#### Control:
+
+> Mouse - Ctrl + F10
+>
+> Enter fullscreen - Alt + Enter
+>
+> The above was the most important thing. If you need something else you can find it in the internet
+
+<br />
+
 #### For uninstall:
 
 > - This procedure will remove the program, including all files in the cloned directory (for example, your source codes). To prevent this from happening, make backups of the files you need
@@ -108,6 +118,16 @@ There is IDE of Borland C++ for Linux
 > 3. bash BorlandC-Linux/install.sh
 >
 > 4. bash Borland.sh
+
+<br />
+
+#### Управление:
+
+> Мышь - Ctrl + F10
+>
+> Полный экран - Alt + Enter
+>
+> Выше было самое главное. Если вам нужно что-то ещё, вы можете поискать в интернете
 
 <br />
 
