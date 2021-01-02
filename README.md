@@ -51,7 +51,7 @@ There is IDE of Borland C++ for Linux
 
 #### Control:
 
-> Mouse - Ctrl + F10
+> Unbind the mouse to the window - Ctrl + F10
 >
 > Enter fullscreen - Alt + Enter
 >
@@ -123,7 +123,7 @@ There is IDE of Borland C++ for Linux
 
 #### Управление:
 
-> Мышь - Ctrl + F10
+> Снять привязку мыши к окну - Ctrl + F10
 >
 > Полный экран - Alt + Enter
 >
