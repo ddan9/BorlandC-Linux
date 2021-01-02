@@ -25,7 +25,7 @@
 
 #### Borland C++ on Linux
 
-There is fixed with some changes version of SMSBomber
+There is IDE of Borland C++ for Linux
 
 <br />
 
@@ -49,53 +49,31 @@ There is fixed with some changes version of SMSBomber
 
 <br />
 
-#### For update: 
-
-> 0. rm -rf BorlandC-Linux
->
-> 1. git clone https://github.com/ddan9/BorlandC-Linux
->
-> 2. bash Borland.sh
-
-<br />
-
 #### For uninstall:
 
+> - uninstalling will delete your 
+>
 > 0. rm -rf BorlandC-Linux
 >
 > 1. rm -rf Borland.sh
+>
+> 2. apt-get remove dosbox (optional)
 
 <br />
 
 #### For ***manual*** install you need:
 
-> - do it in docker whenever possible
->
 > - bash (Maybe something else, i don't know)
 > 
 > - git
 >
-> - git clone https://github.com/ddan9/EBomber into $HOME
+> - git clone https://github.com/ddan9/BorlandC-Linux into $HOME
 >
-> - Python3
+> - dosbox
 >
-> - pip3 or python3-pip (in general, pip from python3)
+> - ln -s $HOME/BorlandC-Linux/start.sh $HOME/Borland.sh
 >
-> - pip3 install -r $HOME/EBomber/config/requirements
->
-> - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
->
-> - bash EBomber.sh
-
-<br />
-
-#### Authors
-
-Creator of original: https://github.com/Ivan-Hacker-700
-
-Creator of effects: https://vk.com/psih.odinochka
-
-Creator of distribution: https://github.com/ddan9
+> - bash Borland.sh
 
 <br />
 
@@ -107,17 +85,15 @@ Creator of distribution: https://github.com/ddan9
 
 <br />
 
-#### Улучшенный Бомбер
+#### Borland C++ на Линукс
  
-Это - пофиксенная с некоторыми изменениями версия SMSBomber'а
+Это - IDE Borland C++ для Линукс
 
 <br />
 
 #### Для ***гладкой*** установки необходимо:
 
-- 💻 ПК: Линукс (Убунту-подобный; Последняя версия; Либо просто apt-based, точно не знаю)
-
-- 📱 Мобильные: Андроид (С термуксом)
+- 💻 ПК: Линукс (Убунту-подобный; 16.04 и выше; Либо просто apt-based, точно не знаю)
 
 <br />
 
@@ -127,21 +103,11 @@ Creator of distribution: https://github.com/ddan9
 >
 > 1. apt-get install -y git
 >
-> 2. git clone https://github.com/ddan9/EBomber
+> 2. git clone https://github.com/ddan9/BorlandC-Linux
 > 
-> 3. bash EBomber/install.sh
+> 3. bash BorlandC-Linux/install.sh
 >
-> 4. bash EBomber.sh
-
-<br />
-
-#### Для обновления:
-
-> 0. rm -rf EBomber
->
-> 1. git clone https://github.com/ddan9/EBomber
->
-> 2. bash EBomber
+> 4. bash Borland.sh
 
 <br />
 
