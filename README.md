@@ -51,7 +51,7 @@ There is IDE of Borland C++ for Linux
 
 #### For uninstall:
 
-> - uninstalling will delete your 
+> - This procedure will remove the program, including all files in the cloned directory (for example, your source codes). To prevent this from happening, make backups of the files you need
 >
 > 0. rm -rf BorlandC-Linux
 >
@@ -113,28 +113,26 @@ There is IDE of Borland C++ for Linux
 
 #### Для удаления:
 
-> 0. rm -rf EBomber
+> - Эта процедура удалит программу, включая все файлы, находящиеся в клонированной директории (например, исходные коды программ). Чтобы этого не произошло, сделайте бэкапы нужных вам файлов
 >
-> 1. rm -rf EBomber.sh
+> 0. rm -rf BorlandC-Linux
+>
+> 1. rm -rf Borland.sh
+>
+> 2. apt-get remove dosbox (опционально)
 
 <br />
 
 #### Для ***ручной*** установки вам нужно:
 
-> - по возможности делать в докере
->
 > - bash (Может что-то другое, точно не знаю)
 >
 > - git
 > 
-> - git clone https://github.com/ddan9/EBomber в вашу $HOME
+> - git clone https://github.com/ddan9/BorlandC-Linux в вашу $HOME
 >
-> - Python3
+> - dosbox
 >
-> - pip3 или python3-pip (в общем, pip из python3)
+> - ln -s $HOME/BorlandC-Linux/start.sh $HOME/Borland.sh
 >
-> - pip3 install -r $HOME/EBomber/config/requirements
->
-> - ln -s $HOME/EBomber/start.sh $HOME/Ebomber.sh
->
-> - bash EBomber.sh
+> - bash Borland.sh
