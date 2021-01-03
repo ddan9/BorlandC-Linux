@@ -51,11 +51,11 @@ There is IDE of Borland C++ for Linux
 
 #### Control:
 
-> Unbind the mouse to the window - Ctrl + F10
+> - Unbind the mouse to the window - Ctrl + F10
 >
-> Enter fullscreen - Alt + Enter
+> - Enter fullscreen - Alt + Enter
 >
-> The above was the most important thing. If you need something else you can find it in the internet
+> - The above was the most important thing. If you need something else you can find it in the internet
 
 <br />
 
@@ -123,11 +123,11 @@ There is IDE of Borland C++ for Linux
 
 #### Управление:
 
-> Снять привязку мыши к окну - Ctrl + F10
+> - Снять привязку мыши к окну - Ctrl + F10
 >
-> Полный экран - Alt + Enter
+> - Полный экран - Alt + Enter
 >
-> Выше было самое главное. Если вам нужно что-то ещё, вы можете поискать в интернете
+> - Выше было самое главное. Если вам нужно что-то ещё, вы можете поискать в интернете
 
 <br />
 
