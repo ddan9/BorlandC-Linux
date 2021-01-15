@@ -71,11 +71,17 @@ There is IDE of Borland C++ for Linux
 
 > - This procedure will remove the program, including all files in the cloned directory (for example, your source codes). To prevent this from happening, make backups of the files you need
 >
+> ***Step by step:***
+>
 > 0. rm -rf BorlandC-Linux
 >
 > 1. rm -rf Borland.sh
 >
 > 2. apt-get remove dosbox (optional)
+>
+> ***By one command:***
+>
+> - rm -rf BorlandC-Linux && rm -rf Borland.sh && apt-get remove dosbox
 
 <br />
 
@@ -117,6 +123,8 @@ There is IDE of Borland C++ for Linux
 
 #### ***Гладкая*** установка:
 
+> ***Шаг за шагом:***
+>
 > 0. apt-get update 
 >
 > 1. apt-get install -y git
@@ -126,6 +134,10 @@ There is IDE of Borland C++ for Linux
 > 3. bash BorlandC-Linux/install.sh
 >
 > 4. bash Borland.sh
+>
+> ***Или одной командой:***
+>
+> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
 <br />
 
@@ -145,11 +157,17 @@ There is IDE of Borland C++ for Linux
 
 > - Эта процедура удалит программу, включая все файлы, находящиеся в клонированной директории (например, исходные коды программ). Чтобы этого не произошло, сделайте бэкапы нужных вам файлов
 >
+> ***Шаг за шагом:***
+>
 > 0. rm -rf BorlandC-Linux
 >
 > 1. rm -rf Borland.sh
 >
 > 2. apt-get remove dosbox (опционально)
+>
+> ***Или одной командой:***
+>
+> - rm -rf BorlandC-Linux && rm -rf Borland.sh && apt-get remove dosbox
 
 <br />
 
