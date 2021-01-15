@@ -37,6 +37,8 @@ There is IDE of Borland C++ for Linux
 
 #### ***Smooth*** installation:
 
+> ***Step by step:***
+>
 > 0. apt-get update
 >
 > 1. apt-get install -y git
@@ -46,11 +48,17 @@ There is IDE of Borland C++ for Linux
 > 3. bash BorlandC-Linux/install.sh
 >
 > 4. bash Borland.sh
+>
+> ***Or by one command:***
+>
+> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
 <br />
 
 #### Control:
 
+> - Close DosBox - Ctrl + F9
+>
 > - Unbind the mouse to the window - Ctrl + F10
 >
 > - Enter fullscreen - Alt + Enter
@@ -123,6 +131,8 @@ There is IDE of Borland C++ for Linux
 
 #### Управление:
 
+> - Закрыть DosBox - Ctrl + F9
+>
 > - Снять привязку мыши к окну - Ctrl + F10
 >
 > - Полный экран - Alt + Enter
