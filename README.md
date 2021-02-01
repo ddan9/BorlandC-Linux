@@ -153,11 +153,15 @@ There is IDE of Borland C++ for Linux
  
 Это - IDE Borland C++ для Линукс
 
+[🔙 Меню](#Меню)
+
 <br />
 
 #### Для ***гладкой*** установки необходимо:
 
-- 💻 ПК: Линукс (Убунту-подобный; 16.04 и выше; Либо просто apt-based, точно не знаю)
+- 💻 ПК: Линукс (Убунту-подобный; 14.04 и выше; Либо просто apt-based, точно не знаю)
+
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -179,6 +183,8 @@ There is IDE of Borland C++ for Linux
 >
 > - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
+[🔙 Меню](#Меню)
+
 <br />
 
 #### Управление:
@@ -190,6 +196,8 @@ There is IDE of Borland C++ for Linux
 > - Полный экран - Alt + Enter
 >
 > - Выше было самое главное. Если вам нужно что-то ещё, вы можете поискать в интернете
+
+[🔙 Меню](#Меню)
 
 <br />
 
@@ -209,6 +217,8 @@ There is IDE of Borland C++ for Linux
 >
 > - rm -rf BorlandC-Linux && rm -rf Borland.sh && sudo apt-get remove dosbox
 
+[🔙 Меню](#Меню)
+
 <br />
 
 #### Для ***ручной*** установки вам нужно:
@@ -224,3 +234,5 @@ There is IDE of Borland C++ for Linux
 > - ln -s $HOME/BorlandC-Linux/start.sh $HOME/Borland.sh
 >
 > - bash Borland.sh
+
+[🔙 Меню](#Меню)
