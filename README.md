@@ -21,6 +21,20 @@
 
 [🇺🇸 🔝 Go up](#Language-translations)
 
+#### Menu:
+
+- [Description ⏪](#)
+
+- [System requirements ⏪](#For-smooth-installation-required)
+
+- [Installation on PC ⏪](#Smooth-installation-on-PC)
+
+- [Control ⏪](#Control)
+
+- [Uninstall ⏪](#For-uninstall)
+
+- [Manual installation ⏪](#For-manual-install-you-need)
+
 <br />
 
 #### Borland C++ on Linux
@@ -31,11 +45,11 @@ There is IDE of Borland C++ for Linux
 
 #### For ***smooth*** installation required: 
 
-- 💻 PC: Linux (Ubuntu-based; 16.04 and higher; Maybe just apt-based, i don't know)
+- 💻 PC: Linux (Ubuntu-based; 14.04 and higher; Maybe just apt-based, i don't know)
 
 <br />
 
-#### ***Smooth*** installation:
+#### ***Smooth*** installation on PC:
 
 > ***Step by step:***
 >
