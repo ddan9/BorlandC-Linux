@@ -41,11 +41,15 @@
 
 There is IDE of Borland C++ for Linux
 
+[🔙 Menu](#Menu)
+
 <br />
 
 #### For ***smooth*** installation required: 
 
 - 💻 PC: Linux (Ubuntu-based; 14.04 and higher; Maybe just apt-based, i don't know)
+
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -67,6 +71,8 @@ There is IDE of Borland C++ for Linux
 >
 > - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
+[🔙 Menu](#Menu)
+
 <br />
 
 #### Control:
@@ -78,6 +84,8 @@ There is IDE of Borland C++ for Linux
 > - Enter fullscreen - Alt + Enter
 >
 > - The above was the most important thing. If you need something else you can find it in the internet
+
+[🔙 Menu](#Menu)
 
 <br />
 
@@ -97,6 +105,8 @@ There is IDE of Borland C++ for Linux
 >
 > - rm -rf BorlandC-Linux && rm -rf Borland.sh && apt-get remove dosbox
 
+[🔙 Menu](#Menu)
+
 <br />
 
 #### For ***manual*** install you need:
@@ -112,6 +122,8 @@ There is IDE of Borland C++ for Linux
 > - ln -s $HOME/BorlandC-Linux/start.sh $HOME/Borland.sh
 >
 > - bash Borland.sh
+
+[🔙 Menu](#Menu)
 
 <br />
 
