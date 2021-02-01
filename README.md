@@ -57,9 +57,9 @@ There is IDE of Borland C++ for Linux
 
 > ***Step by step:***
 >
-> 0. apt-get update
+> 0. sudo apt-get update
 >
-> 1. apt-get install -y git
+> 1. sudo apt-get install -y git
 >
 > 2. git clone https://github.com/ddan9/BorlandC-Linux
 >
@@ -69,7 +69,7 @@ There is IDE of Borland C++ for Linux
 >
 > ***Or by one command:***
 >
-> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
+> - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
 [🔙 Menu](#Menu)
 
@@ -99,11 +99,11 @@ There is IDE of Borland C++ for Linux
 >
 > 1. rm -rf Borland.sh
 >
-> 2. apt-get remove dosbox (optional)
+> 2. sudo apt-get remove dosbox (optional)
 >
 > ***By one command:***
 >
-> - rm -rf BorlandC-Linux && rm -rf Borland.sh && apt-get remove dosbox
+> - rm -rf BorlandC-Linux && rm -rf Borland.sh && sudo apt-get remove dosbox
 
 [🔙 Menu](#Menu)
 
@@ -151,9 +151,9 @@ There is IDE of Borland C++ for Linux
 
 > ***Шаг за шагом:***
 >
-> 0. apt-get update 
+> 0. sudo apt-get update 
 >
-> 1. apt-get install -y git
+> 1. sudo apt-get install -y git
 >
 > 2. git clone https://github.com/ddan9/BorlandC-Linux
 > 
@@ -163,7 +163,7 @@ There is IDE of Borland C++ for Linux
 >
 > ***Или одной командой:***
 >
-> - apt-get update && apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
+> - sudo apt-get update && sudo apt-get install -y git && git clone https://github.com/ddan9/BorlandC-Linux && bash BorlandC-Linux/install.sh && bash Borland.sh
 
 <br />
 
@@ -189,11 +189,11 @@ There is IDE of Borland C++ for Linux
 >
 > 1. rm -rf Borland.sh
 >
-> 2. apt-get remove dosbox (опционально)
+> 2. sudo apt-get remove dosbox (опционально)
 >
 > ***Или одной командой:***
 >
-> - rm -rf BorlandC-Linux && rm -rf Borland.sh && apt-get remove dosbox
+> - rm -rf BorlandC-Linux && rm -rf Borland.sh && sudo apt-get remove dosbox
 
 <br />
 
