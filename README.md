@@ -23,7 +23,7 @@
 
 #### Menu:
 
-- [Description ⏪](#)
+- [Description ⏪](#Borland-C++-on-Linux)
 
 - [System requirements ⏪](#For-smooth-installation-required)
 
