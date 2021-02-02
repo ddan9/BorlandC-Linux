@@ -47,7 +47,7 @@ There is IDE of Borland C++ for Linux
 
 #### For ***smooth*** installation required: 
 
-- 💻 PC: Linux (Ubuntu-based; 14.04 and higher; Maybe just sudo and apt-based, i don't know)
+- 💻 PC: Linux (Ubuntu-based; 12.04 and higher; Maybe just sudo and apt-based, i don't know)
 
 [🔙 Menu](#Menu)
 
@@ -159,7 +159,7 @@ There is IDE of Borland C++ for Linux
 
 #### Для ***гладкой*** установки необходимо:
 
-- 💻 ПК: Линукс (Убунту-подобный; 14.04 и выше; Либо просто sudo и apt-based, точно не знаю)
+- 💻 ПК: Линукс (Убунту-подобный; 12.04 и выше; Либо просто sudo и apt-based, точно не знаю)
 
 [🔙 Меню](#Меню)
 
