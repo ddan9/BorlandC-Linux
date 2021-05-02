@@ -35,6 +35,8 @@
 
 - [Manual installation ⏪](#For-manual-install-you-need)
 
+- [Authors ⏪](#Authors)
+
 <br />
 
 #### Borland C++ on Linux
@@ -154,6 +156,8 @@ There is IDE of Borland C++ for Linux
 - [Удаление ⏪](#Для-удаления)
 
 - [Ручная установка ⏪](#Для-ручной-установки-вам-нужно)
+
+- [Авторы ⏪](#Авторы)
 
 <br />
 
