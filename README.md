@@ -127,6 +127,14 @@ There is IDE of Borland C++ for Linux
 
 <br />
 
+#### Authors
+
+- The exact number of authors is unknown, unfortunately
+
+[🔙 Menu](#Menu)
+
+<br />
+
 ---
 
 ### Описание на Русском
@@ -234,5 +242,13 @@ There is IDE of Borland C++ for Linux
 > - ln -s $HOME/BorlandC-Linux/start.sh $HOME/Borland.sh
 >
 > - bash Borland.sh
+
+[🔙 Меню](#Меню)
+
+<br />
+
+#### Авторы
+
+- Точное количество авторов неизвестно, к сожалению
 
 [🔙 Меню](#Меню)
