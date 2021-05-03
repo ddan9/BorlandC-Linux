@@ -43,7 +43,7 @@
 
 #### Borland C++ on Linux
 
-There is IDE of Borland C++ for Linux. It runs in dosbox. It is more than 30 years old. Uses in our college for teaching C++ programming. In 2020...
+There is IDE of Borland C++ for Linux. It runs in DosBox. It is more than 30 years old. Uses in our college for teaching C++ programming. In 2020...
 
 [🔙 Menu](#Menu)
 
