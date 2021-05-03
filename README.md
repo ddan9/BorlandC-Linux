@@ -7,6 +7,8 @@
 |_____||_____||_|  \_\|_____||_| |_||_| \_||____/          |_____|
 ```
 
+![ < borland example of work > ](borland.gif)
+
 ### Language translations
 
 - [🇺🇸 Description in English](#Description-in-English)
