@@ -76,23 +76,23 @@ if [[ $lang = "" ]]
 				echo "$spacing"
 				echo ""
 
-				sudo apt install -y sudo
+				sudo apt-get install -y sudo
 						
 				echo ""
 
-				sudo apt update
+				sudo apt-get update
 						
 				echo ""
 
-				sudo apt upgrade -y
+				sudo apt-get upgrade -y
 						
 				echo ""
 
-				sudo apt install -y dosbox
+				sudo apt-get install -y dosbox
 						
 				echo ""
 						
-				sudo apt dist-upgrade -y
+				sudo apt-get dist-upgrade -y
 						
 				echo ""
 
@@ -137,23 +137,23 @@ if [[ $lang = "" ]]
 				echo "$spacing"
 				echo ""
 
-				sudo apt install -y sudo
+				sudo apt-get install -y sudo
 						
 				echo ""
 
-				sudo apt update
+				sudo apt-get update
 						
 				echo ""
 
-				sudo apt upgrade -y
+				sudo apt-get upgrade -y
 						
 				echo ""
 
-				sudo apt install -y dosbox
+				sudo apt-get install -y dosbox
 						
 				echo ""
 						
-				sudo apt dist-upgrade -y
+				sudo apt-get dist-upgrade -y
 						
 				echo ""
 
