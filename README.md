@@ -9,6 +9,8 @@
 
 ![ < borland example of work > ](borland.gif)
 
+[![Stargazers over time](https://starchart.cc/ddan9/BorlandC-Linux.svg?variant=adaptive)](https://starchart.cc/ddan9/BorlandC-Linux)
+
 ### Language translations
 
 - [🇺🇸 Description in English](#Description-in-English)
